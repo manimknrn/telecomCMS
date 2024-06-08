@@ -15,7 +15,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Component Details and Completed Flow Use Cases atatched on below location:
-https://github.com/manimknrn/telecomCms/assets/user-manual/Telecom_CustomerManagementSystem_Manikandan_Manoharan.pptx
+https://github.com/manimknrn/telecomCms/blob/main/src/assets/user-manual/Telecom_CustomerManagementSystem_Manikandan_Manoharan.pptx
 
 ## Karma Jasmine Test Cases Details
 ![image](https://github.com/manimknrn/telecomCms/assets/65593713/2563e123-be18-467b-9633-0efbe6c1b17c)
