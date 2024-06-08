@@ -1,0 +1,21 @@
+.actions {
+    align-self: flex-end;
+    display: flex;
+    gap: 14px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+mat-card {
+    margin: 20px 0;
+    width: 100%;
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: column;
+}

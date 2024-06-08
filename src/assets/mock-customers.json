@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Amit Singh",
+            "dob": "1990-01-01",
+            "email": "amit.singh@example.com",
+            "adharNumber": "123456789012",
+            "registrationDate": "2022-01-01",
+            "assignedMobileNumber": "9876543210",
+            "plan": {
+                "planName": "Gold180",
+                "planCost": 299,
+                "validity": 180,
+                "status": "Active"
+            },
+            "renewalDate": "2022-07-01"
+        },
+        {
+            "id": 2,
+            "name": "Raja Smith",
+            "dob": "1985-05-15",
+            "email": "raja.smith@example.com",
+            "adharNumber": "987654321098",
+            "registrationDate": "2023-03-15",
+            "assignedMobileNumber": "9123456780",
+            "plan": {
+                "planName": "Silver90",
+                "planCost": 199,
+                "validity": 90,
+                "status": "Inactive"
+            },
+            "renewalDate": "2023-06-15"
+        },
+        {
+            "id": 3,
+            "name": "Azhar Johnson",
+            "dob": "1992-07-20",
+            "email": "azhar.johnson@example.com",
+            "adharNumber": "123123123123",
+            "registrationDate": "2021-09-20",
+            "assignedMobileNumber": "9988776655",
+            "plan": {
+                "planName": "Platinum365",
+                "planCost": 499,
+                "validity": 365,
+                "status": "Active"
+            },
+            "renewalDate": "2022-09-20"
+        }
+    ],
+    "totalRecords": 3
+}

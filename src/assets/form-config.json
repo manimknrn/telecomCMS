@@ -1,0 +1,147 @@
+{
+  "fields": [
+    {
+      "type": "input",
+      "label": "Name",
+      "name": "name",
+      "inputType": "text",
+      "validations": [
+        {
+          "name": "required",
+          "validator": "required",
+          "message": "Name is required"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "Date of Birth",
+      "name": "dob",
+      "inputType": "date",
+      "validations": [
+        {
+          "name": "required",
+          "validator": "required",
+          "message": "Date of Birth is required"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "Email",
+      "name": "email",
+      "inputType": "email",
+      "validations": [
+        {
+          "name": "required",
+          "validator": "required",
+          "message": "Email is required"
+        },
+        {
+          "name": "email",
+          "validator": "email",
+          "message": "Enter a valid email"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "Adhar number",
+      "name": "adharNumber",
+      "inputType": "text",
+      "validations": [
+        {
+          "name": "required",
+          "validator": "required",
+          "message": "Adhar number is required"
+        },
+        {
+          "name": "pattern",
+          "validator": "pattern",
+          "message": "Enter a valid 12-digit Adhar number",
+          "pattern": "^[0-9]{12}$"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "Mobile Number",
+      "name": "assignedMobileNumber",
+      "inputType": "text",
+      "validations": [
+        {
+          "name": "required",
+          "validator": "required",
+          "message": "Mobile Number is required"
+        },
+        {
+          "name": "pattern",
+          "validator": "pattern",
+          "message": "Enter a valid 10-digit Mobile Number",
+          "pattern": "^[0-9]{10}$"
+        }
+      ]
+    },
+    {
+      "type": "plans",
+      "label": "Choose Plan Name",
+      "name": "plan",
+      "options": [
+        {
+          "key": "Platinum365",
+          "label": "Platinum365",
+          "options": [{
+            "label": "Cost",
+            "value": 499
+          },
+          {
+            "label": "Validity (Days)",
+            "value": 365
+          },
+          {
+            "label": "Status",
+            "value": "Active"
+          }]
+        },
+        {
+          "key": "Gold180",
+          "label": "Gold180",
+          "options": [{
+            "label": "Cost",
+            "value": 299
+          },
+          {
+            "label": "Validity (Days)",
+            "value": 180
+          },
+          {
+            "label": "Status",
+            "value": "Active"
+          }]
+        },
+        {
+          "key": "Silver90",
+          "label": "Silver90",
+          "options": [{
+            "label": "Cost",
+            "value": 199
+          },
+          {
+            "label": "Validity (Days)",
+            "value": 90
+          },
+          {
+            "label": "Status",
+            "value": "InActive"
+          }]
+        }
+      ],
+      "validations": [
+        {
+          "validator": "required",
+          "message": "Plan selection is required"
+        }
+      ]
+    }
+  ]
+}

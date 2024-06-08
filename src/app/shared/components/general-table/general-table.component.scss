@@ -1,0 +1,181 @@
+@import '../../../../assets/styles/color.scss';
+
+.mat-mdc-table {
+    width: 100%;
+
+    thead {
+        background-color: lightblue !important;
+    }
+
+    &.resizing {
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: col-resize;
+    }
+
+    .mat-mdc-cell {
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: auto;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    .mdc-data-table__cell {
+        white-space: nowrap;
+        max-width: 350px;
+
+        span {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: auto;
+            white-space: nowrap;
+        }
+    }
+
+    .mat-mdc-header-cell {
+        position: relative;
+        white-space: nowrap;
+
+        &:not(:last-child) {
+            .resize-holder {
+                cursor: col-resize;
+                width: 20px;
+                height: 100%;
+                position: absolute;
+                right: -10px;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+
+    .mat-mdc-cell,
+    .mat-mdc-header-cell {
+        border-right: 0.5px solid rgba(0, 0, 0, 0.05);
+
+        &:not(:nth-child(1)) {
+            padding: 0 10px;
+        }
+    }
+}
+
+@media (min-width:280px) and (max-width: 768px) {
+    .global {
+        display: block;
+        padding: 4px 0px;
+
+        &_search {
+            display: flex;
+            justify-content: flex-start;
+
+            ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+                height: 4px !important;
+            }
+        }
+
+        &_action {
+            margin: 0 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            column-gap: 6px;
+            align-items: center;
+
+            button {
+                padding: 0;
+                border: none;
+                background: $table_header_bg;
+                color: $clr-white;
+                font-weight: 900;
+                display: flex;
+                align-items: center;
+            }
+
+            .actionFeature {
+                padding: 0px 4px;
+                font-size: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 1920px) {
+    .global {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px 0px;
+
+        &_search {
+            display: flex;
+            justify-content: flex-start;
+
+            ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+                height: 4px !important;
+            }
+        }
+
+        &_action {
+            margin: 0 0 0 auto;
+            display: flex;
+            flex-direction: row;
+            column-gap: 6px;
+            align-items: center;
+
+            button {
+                padding: 0;
+                border: none;
+                background: $table_header_bg;
+                color: $clr-white;
+                font-weight: 900;
+                display: flex;
+                align-items: center;
+            }
+
+            .actionFeature {
+                padding: 0px 4px;
+                font-size: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    .generic {
+        overflow: auto;
+    }
+
+    .generic_table {
+
+        td.mat-mdc-cell,
+        th.mat-mdc-header-cell {
+            width: 25vw !important;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+}
+
+.actionButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    mat-icon {
+        cursor: pointer;
+    }
+}

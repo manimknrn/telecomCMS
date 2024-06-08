@@ -1,0 +1,76 @@
+//Primary Button
+.submit {
+    background-color: $primarybtn_bg;
+    color: $primarybtn_text;
+    font-size: small;
+    min-width: 80px;
+    border: none;
+    min-height: 26px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primarybtn_hover_bg !important;
+        color: $primarybtn_hover_text !important;
+    }
+
+    &:disabled {
+        background-color: $primarybtn_disabled_bg !important;
+        color: $primarybtn_disabled_text !important;
+        cursor: not-allowed !important;
+    }
+}
+
+//Secondary button
+.back {
+    background-color: $secondarybtn_bg;
+    color: $secondarybtn_text;
+    font-size: small;
+    min-width: 80px;
+    border: none;
+    min-height: 26px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $secondarybtn_hover_bg !important;
+        color: $secondarybtn_hover_text !important;
+    }
+
+    &:disabled {
+        background-color: $secondarybtn_disabled_bg !important;
+        color: $secondarybtn_disabled_text !important;
+        cursor: not-allowed !important;
+    }
+}
+
+//Third Button
+.cancel {
+    background-color: $thirdbtn_bg;
+    color: $thirdbtn_text;
+    font-size: small;
+    min-width: 80px;
+    border: none;
+    min-height: 26px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $thirdbtn_hover_bg !important;
+        color: $thirdbtn_hover_text !important;
+    }
+
+    &:disabled {
+        background-color: $thirdbtn_disabled_bg !important;
+        color: $thirdbtn_disabled_text !important;
+        cursor: not-allowed !important;
+    }
+}
+
+.disabled {
+    background-color: #0000001a !important;
+    color: $primarybtn_disabled_text !important;
+    cursor: not-allowed !important;
+
+    &:hover {
+        background-color: #0000001a !important;
+        color: $primarybtn_disabled_text !important;
+    }
+}

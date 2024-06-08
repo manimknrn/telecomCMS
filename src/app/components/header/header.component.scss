@@ -1,0 +1,30 @@
+mat-toolbar-row {
+    border-bottom: solid 1px darkgray;
+    display: flex;
+    gap: 24px;
+}
+
+.header,
+.menus {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.menus > span {
+    font-size: 18px;
+}
+
+nav {
+    cursor: pointer;
+}
+
+.active {
+    font-weight: bold;
+    color: #223f67 !important;
+}

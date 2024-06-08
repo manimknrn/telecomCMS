@@ -1,0 +1,13 @@
+<div>
+    <mat-toolbar>
+        <mat-toolbar-row>
+            <div>
+                <header routerLinkActive="active">{{title}}</header>
+            </div>
+            <mat-divider [vertical]="true"></mat-divider>
+            <div class="menus">
+                <span *ngFor="let menu of menuList" [routerLink]="menu.link" routerLinkActive="active"><nav>{{menu.label}}</nav></span>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>

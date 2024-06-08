@@ -1,0 +1,42 @@
+<form *ngIf="form" [formGroup]="form" class="form-field">
+    <div *ngFor="let field of formConfig.fields">
+
+        <!-- Input fields -->
+        <mat-form-field class="full-width" *ngIf="field.type === 'input'">
+            <mat-label>{{field.label}}</mat-label>
+            <input matInput [formControlName]="field.name" [type]="field.inputType">
+            <mat-error *ngIf="form.get(field.name)?.invalid">{{getErrorMessage(field)}}</mat-error>
+        </mat-form-field>
+
+        <!-- Dropdown -->
+        <mat-form-field class="full-width" *ngIf="field.type === 'select'">
+            <mat-label>{{field.label}}</mat-label>
+            <mat-select [formControlName]="field.name">
+                <mat-option *ngFor="let option of field.options" [value]="option.key">
+                    {{option.label}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="form.get(field.name)?.invalid">{{getErrorMessage(field)}}</mat-error>
+        </mat-form-field>
+
+        <!-- Radio Button Groups -->
+        <ng-container *ngIf="field.type === 'plans'">
+            <label>{{field.label}}</label>
+            <mat-radio-group [formControlName]="field.name" class="radio">
+                <mat-card *ngFor="let option of field.options">
+                    <mat-card-header>
+                        <mat-card-title><mat-radio-button
+                                [value]="option.label"></mat-radio-button>{{option.label}}</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div *ngFor="let details of option.options" class="radio_options">
+                            <nav>{{details.label}}</nav>
+                            <nav>{{details.value}}</nav>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </mat-radio-group>
+            <mat-error *ngIf="form.get(field.name)?.invalid">{{getErrorMessage(field.name)}}</mat-error>
+        </ng-container>
+    </div>
+</form>

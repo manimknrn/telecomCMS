@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Manage Customers</h2>
+    <div *ngIf="totalDataCount > 0">
+        <tcms-general-table [columns]="columns" [data]="data" [currentPage]="currentPage"
+            [totalDataCount]="totalDataCount" (loadData)="loadData($event)" [pageSize]="10"
+            [pagination]="[10,25,50,100]" [buttons]="buttons" (buttonClick)="buttonClick($event)"
+            [actionHeader]="'Actions'" (actionFeature)="actionFeature($event)" [actionFeatureLabel]="'Create'"
+            [actionFeatureFlag]="true">
+        </tcms-general-table>
+    </div>
+</div>
