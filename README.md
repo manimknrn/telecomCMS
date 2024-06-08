@@ -14,10 +14,29 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+#Component Details and Completed Flow Use Cases atatched on below location:
+https://github.com/manimknrn/telecomCms/assets/user-manual/Telecom_CustomerManagementSystem_Manikandan_Manoharan.pptx
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#Karma Jasmine Test Cases Details
+![image](https://github.com/manimknrn/telecomCms/assets/65593713/2563e123-be18-467b-9633-0efbe6c1b17c)
 
-## Further help
+DynamicForm Component:
+Component Creation: Checks if the component is created successfully.
+Form Initialization: Verifies if the form is initialized.
+Form Field Display: Ensures that form fields are displayed based on the form configuration.
+Validators: Checks if required validators are set for form fields.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Register Component:
+Component Creation: Ensure the component is created successfully.
+Form Configuration: Verify the form configuration is loaded on initialization.
+Customer Data Loading: Ensure customer data is loaded correctly for edit mode.
+Form Patching: Verify that the form is patched with customer data in edit mode.
+Form Submission: Check that form submission logs the correct data and navigates to the customer management page.
+
+ManageCustomer Component: 
+Component Creation: Ensure the component is created successfully.
+Customer Data Loading: Ensure customer data is loaded correctly for list view.
+
+App Component: 
+Component Creation: Ensure the component is created successfully.
+Title validation: Ensume the application name is valid and correct.
